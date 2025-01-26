@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# React Organograma
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre o Projeto
 
-## Available Scripts
+Este projeto é um organograma desenvolvido em React, com divisões específicas relacionadas à tecnologia. Ele foi criado para praticar conceitos fundamentais de React, como:
 
-In the project directory, you can run:
+- Componentização
+- Manipulação de estado com hooks (useState)
+- Passagem de props entre componentes
+- Renderização condicional
+- Mapeamento de listas para gerar elementos dinâmicos
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Adição de novos colaboradores em times específicos.
+- Exibição de times com cores personalizadas (primária e secundária).
+- Renderização condicional: os times só aparecem se houver colaboradores associados.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Biblioteca principal para criação do front-end.
+- **CSS**: Para estilizações personalizadas.
+- **JavaScript (ES6+)**: Linguagem de programação utilizada no desenvolvimento.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Rodar o Projeto Localmente
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Certifique-se de ter o Node.js instalado. Caso não tenha, [faça o download aqui](https://nodejs.org/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Passo a Passo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o Repositório**
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/Felipedmgs/react_organograma.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Instale as Dependências** No diretório do projeto, execute:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Inicie o Servidor de Desenvolvimento**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+4. **Acesse no Navegador** O projeto estará disponível em:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   http://localhost:3000
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estrutura do Projeto
 
-### Code Splitting
+```plaintext
+src/
+├── componentes/       # Componentes reutilizáveis do projeto
+│   ├── Banner.js      # Banner do topo da aplicação
+│   ├── Formulario.js  # Formulário para adicionar novos colaboradores
+│   ├── ListaSuspensa.js # Componente para selecionar times
+│   ├── Time.js        # Componente que representa um time e seus colaboradores
+├── App.js             # Componente principal que conecta tudo
+├── index.js           # Ponto de entrada do React
+└── App.css            # Estilizações gerais do projeto
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Melhorias Futuras
 
-### Analyzing the Bundle Size
+- Implementar persistência de dados utilizando uma API ou localStorage.
+- Adicionar funcionalidade de remoção e edição de colaboradores.
+- Permitir personalização de times (cores, nomes, etc.).
+- Criar testes automatizados para garantir a qualidade do código.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuição
 
-### Making a Progressive Web App
+Se você deseja contribuir com melhorias ou novas funcionalidades:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Faça um fork do repositório.
+2. Crie uma branch para sua funcionalidade: `git checkout -b minha-feature`.
+3. Faça commit das suas alterações: `git commit -m 'Adicionei uma nova feature'`.
+4. Envie para o repositório original: `git push origin minha-feature`.
+5. Abra um Pull Request explicando suas alterações.
 
-### Advanced Configuration
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Desenvolvido por **Felipe**. Este é o meu primeiro projeto em React, e estou empolgado para aprender e evoluir ainda mais! 🎉
 
-### Deployment
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Obrigado pela leitura!
