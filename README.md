@@ -87,7 +87,7 @@ Se você deseja contribuir com melhorias ou novas funcionalidades:
 
 ## Autor
 
-Desenvolvido por **Felipe**. Este é o meu primeiro projeto em React, e estou empolgado para aprender e evoluir ainda mais! 🎉
+Desenvolvido por **Felipe durante o curso da Alura**. Este é o meu primeiro projeto em React, e estou empolgado para aprender e evoluir ainda mais! 🎉
 
 ## Licença
 
