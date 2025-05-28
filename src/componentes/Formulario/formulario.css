@@ -1,17 +1,19 @@
 .formulario-container {
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /*faz ficar responsivo, tela vai para baixo quando diminui*/
     justify-content: center;
-    margin: 80px 0;
-
+    margin: 80px 050px;
 }
-.formulario-container .formulario {
-    max-width: 80%;
+.formulario-container .formulario {    
     background: #F7F7F7;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+    flex: 1; /*informa que cada form tem direito a 1 espaço flex, mas como tem dois form cada um pega metade de 1*/
     padding: 36px 64px;
 }
 .formulario-container .formulario h2 {
     font-weight: 400;
     font-size: 32px;
 }
+
